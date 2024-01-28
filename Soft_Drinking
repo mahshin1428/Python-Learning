@@ -1,0 +1,15 @@
+n, k, l, c, d, p, nl, np = map(int, input().split())
+
+total_drink = k * l
+total_lime = c * d
+total_salt = p
+
+# Calculate the number of toasts based on each resource
+toasts_drink = total_drink // nl
+toasts_lime = total_lime
+toasts_salt = total_salt // np
+
+# Find the minimum number of toasts each friend can make
+answer = min(toasts_drink, toasts_lime, toasts_salt) // n
+
+print(answer)
