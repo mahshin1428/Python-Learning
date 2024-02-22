@@ -5,3 +5,4 @@ for i in range(t):
     x = s.replace("+", "")
     s = int(x[0]) + int(x[1])
     print(s)
+    
